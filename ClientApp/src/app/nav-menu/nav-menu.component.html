@@ -17,16 +17,17 @@
           <li class="nav-item"
               [routerLinkActive]="['link-active']"
               [routerLinkActiveOptions]="{ exact: true }">
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+            <!-- We're bypassing the Home component, so don't diplay the Home page in the nave bar -->
+            <!--<a class="nav-link text-dark" [routerLink]="['/']">Home</a>-->
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/welcome-page']">Welcome page</a>
+            <a class="nav-link text-dark" [routerLink]="['/welcome-page']">Welcome</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/working-on-simulations']">Working on simulations</a>
+            <a class="nav-link text-dark" [routerLink]="['/working-on-simulations']">Working on Simulations</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/display-results']">Display results of analytics</a>
+            <a class="nav-link text-dark" [routerLink]="['/display-results']">Display results of Analytics</a>
           </li>
         </ul>
       </div>

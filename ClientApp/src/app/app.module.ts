@@ -30,7 +30,9 @@ import { map, catchError } from 'rxjs/operators';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      // bypass the Home compoent and go straight to the Welcome page
+      //{ path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: '', component: WelcomePageComponent, pathMatch: 'full' },
       { path: 'welcome-page', component: WelcomePageComponent },
       { path: 'working-on-simulations', component: WorkingOnSimulationsComponent },
       { path: 'display-results', component: DisplayResultsComponent },
