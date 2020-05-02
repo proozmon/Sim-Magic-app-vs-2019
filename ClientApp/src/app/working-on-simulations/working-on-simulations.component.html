@@ -1,4 +1,35 @@
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueWorkingOnSimulations">
+  <li class="nav-link active">
+    <a class="nav-link link-primary" id="login-or-register-tab" data-toggle="tab" href="/working-on-simulations#working-on-simulations" role="tab"
+       aria-controls="login-or-register" aria-selected="false" (click)="showActive(0)">Introduction</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="login-or-register-tab" data-toggle="tab" href="/working-on-simulations#login-or-register" role="tab"
+       aria-controls="login-or-register" aria-selected="false" (click)="showActive(1)">Login/Register</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="getting-started-tab" data-toggle="tab" href="/working-on-simulations#getting-started" role="tab"
+       aria-controls="getting-started" aria-selected="false" (click)="showActive(2)">Getting Started</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="select-application-tab" data-toggle="tab" href="/working-on-simulations#select-application" role="tab"
+       aria-controls="select-application" aria-selected="false" (click)="showActive(3)">Select Application</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="system-parameters-tab" data-toggle="tab" href="/working-on-simulations#system-parameters" role="tab"
+       aria-controls="system-parameters" aria-selected="false" (click)="showActive(4)">System Parameters</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="graphical-parameters-tab" data-toggle="tab" href="/working-on-simulations#graphical-parameters" role="tab"
+       aria-controls="graphical-parameters" aria-selected="false" (click)="showActive(5)">Graphical Parameters</a>
+  </li>
+</ul>
+
 <ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueLoginOrRegister">
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="login-or-register-tab" data-toggle="tab" href="/working-on-simulations#working-on-simulations" role="tab"
+       aria-controls="login-or-register" aria-selected="false" (click)="showActive(0)">Working on Simulations</a>
+  </li>
   <li class="nav-link active">
     <a class="nav-link link-primary" id="login-or-register-tab" data-toggle="tab" href="/working-on-simulations#login-or-register" role="tab"
        aria-controls="login-or-register" aria-selected="false" (click)="showActive(1)">Login Or Register</a>
@@ -23,6 +54,10 @@
 
 <ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueGettingStarted">
   <li class="nav-link">
+    <a class="nav-link link-secondary" id="login-or-register-tab" data-toggle="tab" href="/working-on-simulations#working-on-simulations" role="tab"
+       aria-controls="login-or-register" aria-selected="false" (click)="showActive(0)">Working on Simulations</a>
+  </li>
+  <li class="nav-link">
     <a class="nav-link link-secondary" id="login-or-register-tab" data-toggle="tab" href="/working-on-simulations#login-or-register" role="tab"
        aria-controls="login-or-register" aria-selected="false" (click)="showActive(1)">Login Or Register</a>
   </li>
@@ -45,6 +80,10 @@
 </ul>
 
 <ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueSelectApplication">
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="login-or-register-tab" data-toggle="tab" href="/working-on-simulations#working-on-simulations" role="tab"
+       aria-controls="login-or-register" aria-selected="false" (click)="showActive(0)">Working on Simulations</a>
+  </li>
   <li class="nav-link">
     <a class="nav-link link-secondary" id="login-or-register-tab" data-toggle="tab" href="/working-on-simulations#login-or-register" role="tab"
        aria-controls="login-or-register" aria-selected="false" (click)="showActive(1)">Login Or Register</a>
@@ -69,6 +108,10 @@
 
 <ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueSystemParameters">
   <li class="nav-link">
+    <a class="nav-link link-secondary" id="login-or-register-tab" data-toggle="tab" href="/working-on-simulations#working-on-simulations" role="tab"
+       aria-controls="login-or-register" aria-selected="false" (click)="showActive(0)">Working on Simulations</a>
+  </li>
+  <li class="nav-link">
     <a class="nav-link link-secondary" id="login-or-register-tab" data-toggle="tab" href="/working-on-simulations#login-or-register" role="tab"
        aria-controls="login-or-register" aria-selected="false" (click)="showActive(1)">Login Or Register</a>
   </li>
@@ -91,6 +134,10 @@
 </ul>
 
 <ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueGraphicalParameters">
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="login-or-register-tab" data-toggle="tab" href="/working-on-simulations#working-on-simulations" role="tab"
+       aria-controls="login-or-register" aria-selected="false" (click)="showActive(0)">Working on Simulations</a>
+  </li>
   <li class="nav-link">
     <a class="nav-link link-secondary" id="login-or-register-tab" data-toggle="tab" href="/working-on-simulations#login-or-register" role="tab"
        aria-controls="login-or-register" aria-selected="false" (click)="showActive(1)">Login Or Register</a>
@@ -116,10 +163,10 @@
 <div class="tab-content" id="myTabContent">
 
   <div class="tab-pane fade show active"
-       id="login-or-register"
+       id="working-on-simulations"
        role="tabpanel"
-       aria-labelledby="login-or-register-tab"
-       *ngIf="this.myValueLoginOrRegister">
+       aria-labelledby="wokring-on-simulations-tab"
+       *ngIf="this.myValueWorkingOnSimulations">
 
     <br />
     <div class="text-center x-large-text">
@@ -138,14 +185,14 @@
         <strong>
           Getting started means that you begin by selecting the type of application that you're working on, This includes a wide rnage, such as healthcare,
           manufacturing, finance, etc. After you select the project type, you'll be asked to enter the system and graphical paremeters. This inmformation
-          will be used to configure your project, so that we can proceed with the analytics and simulations.  
+          will be used to configure your project, so that we can proceed with the analytics and simulations.
         </strong>
       </p>
       <p>
         <strong>
           If you're continuing a project that you've started previously, then the previous configuration will appear automatically when you select your project.
           Once you've configures your project, you'll be ready to display the results. The more detailed your configuration, the more complete the results
-          will be. Hence it's likely that you'll want to repidodically view the interim results as you gradually configure the system. 
+          will be. Hence it's likely that you'll want to repidodically view the interim results as you gradually configure the system.
         </strong>
       </p>
       <p>
@@ -203,6 +250,16 @@
         </td>
       </tr>
     </table>
+  </div>
+
+  <div class="tab-pane fade show active"
+       id="login-or-register"
+       role="tabpanel"
+       aria-labelledby="login-or-register-tab"
+       *ngIf="this.myValueLoginOrRegister">
+    <br /><br />
+    <div class="x-large-text">Login or register</div>.
+    <br /><br />
   </div>
 
   <div class="tab-pane fade show active"

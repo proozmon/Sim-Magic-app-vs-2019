@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class WorkingOnSimulationsComponent implements OnInit {
 
+  myValueWorkingOnSimulations: boolean;
   myValueLoginOrRegister: boolean;
   myValueGettingStarted: boolean;
   myValueSelectApplication: boolean;
@@ -16,7 +17,8 @@ export class WorkingOnSimulationsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.myValueLoginOrRegister = true;
+    this.myValueWorkingOnSimulations = true;
+    this.myValueLoginOrRegister = false;
     this.myValueGettingStarted = false;
     this.myValueSelectApplication = false;
     this.myValueSystemParameters = false;
@@ -26,7 +28,16 @@ export class WorkingOnSimulationsComponent implements OnInit {
   showActive(tab: number) {
 
     switch (tab) {
+      case 0:
+        this.myValueWorkingOnSimulations = true;
+        this.myValueLoginOrRegister = false;
+        this.myValueGettingStarted = false;
+        this.myValueSelectApplication = false;
+        this.myValueSystemParameters = false;
+        this.myValueGraphicalParameters = false;
+        break;
       case 1:
+        this.myValueWorkingOnSimulations = false;
         this.myValueLoginOrRegister = true;
         this.myValueGettingStarted = false;
         this.myValueSelectApplication = false;
@@ -34,6 +45,7 @@ export class WorkingOnSimulationsComponent implements OnInit {
         this.myValueGraphicalParameters = false;
         break;
       case 2:
+        this.myValueWorkingOnSimulations = false;
         this.myValueLoginOrRegister = false;
         this.myValueGettingStarted = true;
         this.myValueSelectApplication = false;
@@ -41,6 +53,7 @@ export class WorkingOnSimulationsComponent implements OnInit {
         this.myValueGraphicalParameters = false;
         break;
       case 3:
+        this.myValueWorkingOnSimulations = false;
         this.myValueLoginOrRegister = false;
         this.myValueGettingStarted = false;
         this.myValueSelectApplication = true;
@@ -48,6 +61,7 @@ export class WorkingOnSimulationsComponent implements OnInit {
         this.myValueGraphicalParameters = false;
         break;
       case 4:
+        this.myValueWorkingOnSimulations = false;
         this.myValueLoginOrRegister = false;
         this.myValueGettingStarted = false;
         this.myValueSelectApplication = false;
@@ -55,6 +69,7 @@ export class WorkingOnSimulationsComponent implements OnInit {
         this.myValueGraphicalParameters = false;
         break;
       case 5:
+        this.myValueWorkingOnSimulations = false;
         this.myValueLoginOrRegister = false;
         this.myValueGettingStarted = false;
         this.myValueSelectApplication = false;
