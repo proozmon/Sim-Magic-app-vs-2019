@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Data.SqlClient;
 
-namespace my_new_app.Controllers
+namespace Sim_Magic_app.Controllers
 {
     [ApiController]
     [Route("[controller]")]

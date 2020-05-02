@@ -1,11 +1,11 @@
 {
-  "name": "my_new_app",
+  "name": "Sim_Magic_app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ssr": "ng run my_new_app:server:dev",
+    "build:ssr": "ng run Sim_Magic_app:server:dev",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

@@ -1,4 +1,4 @@
-﻿namespace my_new_app.Controllers
+﻿namespace Sim_Magic_app.Controllers
 {
     public class HttpParams
     {

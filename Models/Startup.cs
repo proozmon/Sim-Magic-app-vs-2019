@@ -12,7 +12,7 @@ using System.Net.Http;
 using System.Web.Http.Routing;
 using System;
 
-namespace my_new_app
+namespace Sim_Magic_app
 {
     public class Startup
     {

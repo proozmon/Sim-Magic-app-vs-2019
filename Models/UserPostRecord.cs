@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace my_new_app
+namespace Sim_Magic_app
 {
     public class UserPostRecords
     {
