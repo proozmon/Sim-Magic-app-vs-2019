@@ -1,0 +1,186 @@
+<h1>UserID</h1>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueIncrement">
+  <li class="nav-link active">
+    <a class="nav-link link-primary" id="Incrementtab" data-toggle="tab" href="/userID#increment" role="tab"
+       aria-controls="increment" aria-selected="false" (click)="showActive(1)">Increment</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link" id="save-tab" data-toggle="tab" href="/userID#save" role="tab"
+       aria-controls="save" aria-selected="false" (click)="showActive(2)">Save</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link" id="insert-tab" data-toggle="tab" href="/userID#insert" role="tab"
+       aria-controls="insert" aria-selected="false" (click)="showActive(3)" color="pink">Insert</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link" id="delete-tab" data-toggle="tab" href="/userID#delete" role="tab"
+       aria-controls="delete" aria-selected="false" (click)="showActive(4)" color="pink">Delete</a>
+  </li>
+</ul>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueSave">
+  <li class="nav-link">
+    <a class="nav-link" id="Incrementtab" data-toggle="tab" href="/userID#increment" role="tab"
+       aria-controls="increment" aria-selected="false" (click)="showActive(1)">Increment</a>
+  </li>
+  <li class="nav-link active">
+    <a class="nav-link link-primary" id="save-tab" data-toggle="tab" href="/userID#save" role="tab"
+       aria-controls="save" aria-selected="false" (click)="showActive(2)">Save</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link" id="insert-tab" data-toggle="tab" href="/userID#insert" role="tab"
+       aria-controls="insert" aria-selected="false" (click)="showActive(3)" color="pink">Insert</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link" id="delete-tab" data-toggle="tab" href="/userID#delete" role="tab"
+       aria-controls="delete" aria-selected="false" (click)="showActive(4)" color="pink">Delete</a>
+  </li>
+</ul>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueInsert">
+  <li class="nav-link">
+    <a class="nav-link" id="Incrementtab" data-toggle="tab" href="/userID#increment" role="tab"
+       aria-controls="increment" aria-selected="false" (click)="showActive(1)">Increment</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link" id="save-tab" data-toggle="tab" href="/userID#save" role="tab"
+       aria-controls="save" aria-selected="false" (click)="showActive(2)">Save</a>
+  </li>
+  <li class="nav-link  active">
+    <a class="nav-link  link-primary" id="insert-tab" data-toggle="tab" href="/userID#insert" role="tab"
+       aria-controls="insert" aria-selected="false" (click)="showActive(3)">Insert</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link" id="delete-tab" data-toggle="tab" href="/userID#delete" role="tab"
+       aria-controls="delete" aria-selected="false" (click)="showActive(4)">Delete</a>
+  </li>
+</ul>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueDelete">
+  <li class="nav-link">
+    <a class="nav-link" id="Incrementtab" data-toggle="tab" href="/userID#increment" role="tab"
+       aria-controls="increment" aria-selected="false" (click)="showActive(1)">Increment</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link" id="save-tab" data-toggle="tab" href="/userID#save" role="tab"
+       aria-controls="save" aria-selected="false" (click)="showActive(2)">Save</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link" id="insert-tab" data-toggle="tab" href="/userID#insert" role="tab"
+       aria-controls="insert" aria-selected="false" (click)="showActive(3)">Insert</a>
+  </li>
+  <li class="nav-link  active">
+    <a class="nav-link link-primary" id="delete-tab" data-toggle="tab" href="/userID#delete" role="tab"
+       aria-controls="delete" aria-selected="false" (click)="showActive(4)">Delete</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+
+  <div class="tab-pane fade show active"
+       id="increment"
+       role="tabpanel"
+       aria-labelledby="increment-tab"
+       *ngIf="this.myValueIncrement">
+
+    <p>This is a simple 1st example of an Angular component to get/increment two values.</p>
+
+    <p aria-live="polite">Current count 1: <strong>{{ currentCount1 }}</strong></p>
+    <p aria-live="polite">Current count 2: <strong>{{ currentCount2 }}</strong></p>
+
+    <!--<input type="text" name="userName" ng-model="userName" />-->
+    <p>Enter user name to get ID displayed in counter 1: {{ userName1 }}</p>
+    <input [(ngModel)]="userName1" #ctrl="ngModel" required>
+
+    <!--<input type="text" name="userName" ng-model="userName" />-->
+    <p>Enter user name to get ID displayed in counter 2: {{ userName2 }}</p>
+    <input [(ngModel)]="userName2" #ctrl="ngModel" required>
+
+    <button class="btn btn-primary" (click)="incrementCounters()">Increment counter values</button>
+
+    <br />  <br />
+
+  </div>
+
+  <div class="tab-pane fade show active"
+       id="increment"
+       role="tabpanel"
+       aria-labelledby="increment-tab"
+       *ngIf="this.myValueSave">
+
+    <p>This is a simple 2nd example of an Angular component to save two values.</p>
+
+    <!--<input type="text" name="userName" ng-model="userName" />-->
+    <p>Enter user name to save ID displayed in counter 1: {{ userName1 }}</p>
+    <input [(ngModel)]="userName1" #ctrl="ngModel" required>
+
+    <!--<input type="text" name="userName" ng-model="userName" />-->
+    <p>Enter user name to save ID displayed in counter 2: {{ userName2 }}</p>
+    <input [(ngModel)]="userName2" #ctrl="ngModel" required>
+
+    <button class="btn btn-secondary" (click)="saveCounter()">Save counter values</button>
+
+    <br />  <br />
+
+  </div>
+
+  <div class="tab-pane fade show active"
+       id="increment"
+       role="tabpanel"
+       aria-labelledby="increment-tab"
+       *ngIf="this.myValueInsert">
+
+    <p>This is a simple 3rd example of an Angular component to insert a new record.</p>
+
+    <!--<input type="text" name="userName" ng-model="userName" />-->
+    <p>User name for new record: {{ userName }}</p>
+    <input [(ngModel)]="userName" #ctrl="ngModel" required>
+
+    <p>User ID for new record: {{ userID }}</p>
+    <input [(ngModel)]="userID" #ctrl="ngModel" required>
+
+    <p>Password for new record: {{ password }}</p>
+    <input [(ngModel)]="password" #ctrl="ngModel" required>
+
+    <!--<p>Valid: {{ ctrl.valid }}</p>-->
+
+    <button class="btn btn-tertiary" (click)="newUser()">Create new Record</button>
+
+    /b
+
+    <
+    >
+
+
+    <br /> <
+    >
+    <br />
+
+    <
+    >
+
+
+  </div>
+
+  <div class="tab-pane fade show active"
+       id="increment"
+       role="tabpanel"
+       aria-labelledby="increment-tab"
+       *ngIf="this.myValueDelete">
+
+    <p>This is a simple 4th example of an Angular component to delete a record.</p>
+
+    <p>User name: {{ userName }}</p>
+    <input [(ngModel)]="userName" #ctrl="ngModel" required>
+
+    <p>User ID: {{ userID }}</p>
+    <input [(ngModel)]="userID" #ctrl="ngModel" required>
+
+    <button class="btn btn-quartiary" (click)="deleteUser()">Delete Record</button>
+
+    <br />  <br />
+
+  </div>
+
+</div>

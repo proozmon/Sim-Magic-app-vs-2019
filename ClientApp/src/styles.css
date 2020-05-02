@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.x-large-text {
+    font-size:x-large;
+}
+
+.larger-text {
+  font-size:larger;
+}
+
+.grey-background {
+  background-color: lightgrey;
+}
+
+.grey-background {
+  background-color:ghostwhite;
+}
+
+.blue-background {
+  background-color: lightcyan;
+  color: darkblue;
+  font: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold-borders {
+  border: double;
+  background-color:cornsilk;
+  color:darkmagenta;
+  font:bold;
+}
+
+.link-primary {
+  color: white;
+  background-color: cornflowerblue;
+  border-color: #1861ac;
+}
+
+.link-secondary{
+  color: darkmagenta;
+  background-color:cornsilk;
+  border-color: #1861ac;
+}
+
+.btn-primary {
+  color: white;
+  background-color: cornflowerblue;
+  border-color: #1861ac;
+}
+
+.btn-secondary {
+  color: white;
+  background-color: green;
+  border-color: #1861ac;
+}
+
+.btn-tertiary {
+  color: white;
+  background-color: blueviolet;
+  border-color: #1861ac;
+}
+
+.btn-quartiary {
+  color: white;
+  background-color: red;
+  border-color: #1861ac;
+}
