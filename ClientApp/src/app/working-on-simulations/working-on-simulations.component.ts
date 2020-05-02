@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class WorkingOnSimulationsComponent implements OnInit {
 
   myValueWorkingOnSimulations: boolean;
-  myValueLoginOrRegister: boolean;
   myValueGettingStarted: boolean;
   myValueSelectApplication: boolean;
   myValueSystemParameters: boolean;
@@ -18,7 +17,6 @@ export class WorkingOnSimulationsComponent implements OnInit {
 
   ngOnInit() {
     this.myValueWorkingOnSimulations = true;
-    this.myValueLoginOrRegister = false;
     this.myValueGettingStarted = false;
     this.myValueSelectApplication = false;
     this.myValueSystemParameters = false;
@@ -28,17 +26,8 @@ export class WorkingOnSimulationsComponent implements OnInit {
   showActive(tab: number) {
 
     switch (tab) {
-      case 0:
-        this.myValueWorkingOnSimulations = true;
-        this.myValueLoginOrRegister = false;
-        this.myValueGettingStarted = false;
-        this.myValueSelectApplication = false;
-        this.myValueSystemParameters = false;
-        this.myValueGraphicalParameters = false;
-        break;
       case 1:
-        this.myValueWorkingOnSimulations = false;
-        this.myValueLoginOrRegister = true;
+        this.myValueWorkingOnSimulations = true;
         this.myValueGettingStarted = false;
         this.myValueSelectApplication = false;
         this.myValueSystemParameters = false;
@@ -46,7 +35,6 @@ export class WorkingOnSimulationsComponent implements OnInit {
         break;
       case 2:
         this.myValueWorkingOnSimulations = false;
-        this.myValueLoginOrRegister = false;
         this.myValueGettingStarted = true;
         this.myValueSelectApplication = false;
         this.myValueSystemParameters = false;
@@ -54,7 +42,6 @@ export class WorkingOnSimulationsComponent implements OnInit {
         break;
       case 3:
         this.myValueWorkingOnSimulations = false;
-        this.myValueLoginOrRegister = false;
         this.myValueGettingStarted = false;
         this.myValueSelectApplication = true;
         this.myValueSystemParameters = false;
@@ -62,7 +49,6 @@ export class WorkingOnSimulationsComponent implements OnInit {
         break;
       case 4:
         this.myValueWorkingOnSimulations = false;
-        this.myValueLoginOrRegister = false;
         this.myValueGettingStarted = false;
         this.myValueSelectApplication = false;
         this.myValueSystemParameters = true;
@@ -70,7 +56,6 @@ export class WorkingOnSimulationsComponent implements OnInit {
         break;
       case 5:
         this.myValueWorkingOnSimulations = false;
-        this.myValueLoginOrRegister = false;
         this.myValueGettingStarted = false;
         this.myValueSelectApplication = false;
         this.myValueSystemParameters = false;

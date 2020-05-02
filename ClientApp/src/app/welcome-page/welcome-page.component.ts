@@ -13,6 +13,7 @@ export class WelcomePageComponent implements OnInit {
   myValueEditions: boolean;
   myValueCustomizedSolutions: boolean;
   myValueContactUs: boolean;
+  myValueLoginOrRegister: boolean;
 
   constructor() { }
 
@@ -24,6 +25,7 @@ export class WelcomePageComponent implements OnInit {
     this.myValueEditions = false;
     this.myValueCustomizedSolutions = false;
     this.myValueContactUs = false;
+    this.myValueLoginOrRegister = false;
   }
 
   showActive(tab: number) {
@@ -36,6 +38,7 @@ export class WelcomePageComponent implements OnInit {
         this.myValueEditions = false;
         this.myValueCustomizedSolutions = false;
         this.myValueContactUs = false;
+        this.myValueLoginOrRegister = false;
         break;
       case 2:
         this.myValueHome = false;
@@ -44,6 +47,7 @@ export class WelcomePageComponent implements OnInit {
         this.myValueEditions = false;
         this.myValueCustomizedSolutions = false;
         this.myValueContactUs = false;
+        this.myValueLoginOrRegister = false;
         break;
       case 3:
         this.myValueHome = false;
@@ -52,6 +56,7 @@ export class WelcomePageComponent implements OnInit {
         this.myValueEditions = false;
         this.myValueCustomizedSolutions = false;
         this.myValueContactUs = false;
+        this.myValueLoginOrRegister = false;
         break;
       case 4:
         this.myValueHome = false;
@@ -60,6 +65,7 @@ export class WelcomePageComponent implements OnInit {
         this.myValueEditions = true;
         this.myValueCustomizedSolutions = false;
         this.myValueContactUs = false;
+        this.myValueLoginOrRegister = false;
         break;
       case 5:
         this.myValueHome = false;
@@ -68,6 +74,7 @@ export class WelcomePageComponent implements OnInit {
         this.myValueEditions = false;
         this.myValueCustomizedSolutions = true;
         this.myValueContactUs = false;
+        this.myValueLoginOrRegister = false;
         break;
       case 6:
         this.myValueHome = false;
@@ -76,6 +83,16 @@ export class WelcomePageComponent implements OnInit {
         this.myValueEditions = false;
         this.myValueCustomizedSolutions = false;
         this.myValueContactUs = true;
+        this.myValueLoginOrRegister = false;
+        break;
+      case 7:
+        this.myValueHome = false;
+        this.myValueAbout = false;
+        this.myValueProducts = false;
+        this.myValueEditions = false;
+        this.myValueCustomizedSolutions = false;
+        this.myValueContactUs = false;
+        this.myValueLoginOrRegister = true;
         break;
       default:
         break;
