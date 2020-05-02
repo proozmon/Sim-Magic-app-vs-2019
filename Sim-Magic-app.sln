@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "my-new-app", "my-new-app.csproj", "{517E9B1F-E50B-49A1-AB1A-C09C1A618C2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sim-Magic-app", "Sim-Magic-app.csproj", "{517E9B1F-E50B-49A1-AB1A-C09C1A618C2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
