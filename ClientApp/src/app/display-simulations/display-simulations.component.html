@@ -1,0 +1,238 @@
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueHowToDisplaySimulations">
+  <li class="nav-link active">
+    <a class="nav-link link-primary" id="how-to-display-simulations-tab" data-toggle="tab" href="/display-simulations#how-to-display-simulations" role="tab"
+       aria-controls="how-to-display-simulations" aria-selected="false" (click)="showActive(1)">How to display Simulations</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-simulations#display-forecasts" role="tab"
+       aria-controls="display-forecasts" aria-selected="false" (click)="showActive(2)">Forecasts</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-scenarios-tab" data-toggle="tab" href="/display-simulations#display-scenarios" role="tab"
+       aria-controls="display-scenarios" aria-selected="false" (click)="showActive(3)">Scenarios</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-2D-animations-tab" data-toggle="tab" href="/display-simulations#display-2D-animations" role="tab"
+       aria-controls="display-2D-animations" aria-selected="false" (click)="showActive(4)">Configure 2D Animations</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-3D-animations-tab" data-toggle="tab" href="/display-simulations#display-3D-animations" role="tab"
+       aria-controls="display-3D-animations" aria-selected="false" (click)="showActive(5)">Configure 3D Animations</a>
+  </li>
+</ul>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueDisplayForecasts">
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="how-to-display-simulations-tab" data-toggle="tab" href="/display-simulations#how-to-display-simulations" role="tab"
+       aria-controls="how-to-display-simulations" aria-selected="false" (click)="showActive(1)">How to display Simulations</a>
+  </li>
+  <li class="nav-link active">
+    <a class="nav-link link-primary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-simulations#display-forecasts" role="tab"
+       aria-controls="display-forecasts" aria-selected="false" (click)="showActive(2)">Forecasts</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-scenarios-tab" data-toggle="tab" href="/display-simulations#display-scenarios" role="tab"
+       aria-controls="display-scenarios" aria-selected="false" (click)="showActive(3)">Scenarios</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-2D-animations-tab" data-toggle="tab" href="/display-simulations#display-2D-animations" role="tab"
+       aria-controls="display-2D-animations" aria-selected="false" (click)="showActive(4)">Configure 2D Animations</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-3D-animations-tab" data-toggle="tab" href="/display-simulations#display-3D-animations" role="tab"
+       aria-controls="display-3D-animations" aria-selected="false" (click)="showActive(5)">Configure 3D Animations</a>
+  </li>
+</ul>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueDisplayScenarios">
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="how-to-display-simulations-tab" data-toggle="tab" href="/display-simulations#how-to-display-simulations" role="tab"
+       aria-controls="how-to-display-simulations" aria-selected="false" (click)="showActive(1)">How to display Simulations</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-simulations#display-forecasts" role="tab"
+       aria-controls="display-forecasts" aria-selected="false" (click)="showActive(2)">Forecasts</a>
+  </li>
+  <li class="nav-link active">
+    <a class="nav-link link-primary" id="display-scenarios-tab" data-toggle="tab" href="/display-simulations#display-scenarios" role="tab"
+       aria-controls="display-scenarios" aria-selected="false" (click)="showActive(3)">Scenarios</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-2D-animations-tab" data-toggle="tab" href="/display-simulations#display-2D-animations" role="tab"
+       aria-controls="display-2D-animations" aria-selected="false" (click)="showActive(4)">Configure 2D Animations</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-3D-animations-tab" data-toggle="tab" href="/display-simulations#display-3D-animations" role="tab"
+       aria-controls="display-3D-animations" aria-selected="false" (click)="showActive(5)">Configure 3D Animations</a>
+  </li>
+</ul>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueConfigureTwoDimensionalAnimations">
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="how-to-display-simulations-tab" data-toggle="tab" href="/display-simulations#how-to-display-simulations" role="tab"
+       aria-controls="how-to-display-simulations" aria-selected="false" (click)="showActive(1)">How to display Simulations</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-simulations#display-forecasts" role="tab"
+       aria-controls="display-forecasts" aria-selected="false" (click)="showActive(2)">Forecasts</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-scenarios-tab" data-toggle="tab" href="/display-simulations#display-scenarios" role="tab"
+       aria-controls="display-scenarios" aria-selected="false" (click)="showActive(3)">Scenarios</a>
+  </li>
+  <li class="nav-link active">
+    <a class="nav-link link-primary" id="display-2D-animations-tab" data-toggle="tab" href="/display-simulations#display-2D-animations" role="tab"
+       aria-controls="display-2D-animations" aria-selected="false" (click)="showActive(4)">Configure 2D Animations</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-3D-animations-tab" data-toggle="tab" href="/display-simulations#display-3D-animations" role="tab"
+       aria-controls="display-3D-animations" aria-selected="false" (click)="showActive(5)">Configure 3D Animations</a>
+  </li>
+</ul>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueConfigureThreeDimensionalAnimations">
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="how-to-display-simulations-tab" data-toggle="tab" href="/display-simulations#how-to-display-simulations" role="tab"
+       aria-controls="how-to-display-simulations" aria-selected="false" (click)="showActive(1)">How to display Simulations</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-simulations#display-forecasts" role="tab"
+       aria-controls="display-forecasts" aria-selected="false" (click)="showActive(2)">Forecasts</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-scenarios-tab" data-toggle="tab" href="/display-simulations#display-scenarios" role="tab"
+       aria-controls="display-scenarios" aria-selected="false" (click)="showActive(3)">Scenarios</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-2D-animations-tab" data-toggle="tab" href="/display-simulations#display-2D-animations" role="tab"
+       aria-controls="display-2D-animations" aria-selected="false" (click)="showActive(4)">Configure 2D Animations</a>
+  </li>
+  <li class="nav-link active">
+    <a class="nav-link link-primary" id="display-3D-animations-tab" data-toggle="tab" href="/display-simulations#display-3D-animations" role="tab"
+       aria-controls="display-3D-animations" aria-selected="false" (click)="showActive(5)">Configure 3D Animations</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+
+  <div class="tab-pane fade show active"
+       id="how-to-display-simulations"
+       role="tabpanel"
+       aria-labelledby="how-to-display-simulations-tab"
+       *ngIf="this.myValueHowToDisplaySimulations">
+
+    <br />
+    <div class="text-center x-large-text">
+      <p><strong>How to Display Simulations</strong></p>
+    </div>
+    <hr />
+
+    <div class="blue-background">
+      <p>
+        <strong>
+          This page is the starting point for choosing which type of simulations to display. While the results of the system's Analytics can be visualized 
+          via the 'Display Analytics' page, the various tabs of the 'Display Simulations' page are intended specifically to show the
+          various types of Simulations available to you.
+        </strong>
+      </p>
+      <p>
+        <strong>
+          For example you can select the types of forecacts and scenerios thata re used to create the Simulations. similarly, you can choose between 2D and 3D
+          animations, as well as how to configre them. For more detailed explanationsof the various types of Simulations available to you, please see the
+          system's Help screens.
+        </strong>
+      </p>
+      <p>
+        <strong>
+          To adjust the system or graphics parameters of the Simulations (e.g. lighting, texture, etc), return to the 'Working on Simulations' item from
+          the menu at the top of the page.  
+        </strong>
+      </p>
+    </div>
+    <hr />
+
+    <div class="text-center larger-text">
+      <p><strong>Descriptin of Tab Selections for this Page</strong></p>
+    </div>
+    <br />
+
+    <table class="table bold-borders">
+      <tr>
+        <th class="underline">Tab</th>
+        <th class="underline">Description</th>
+      </tr>
+      <tr>
+        <td><strong>How to display Simualtions</strong></td>
+        <td>
+          <strong>This tab provides an entry point for displaying the sinulations for your system</strong>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Display forecasts</strong></td>
+        <td><strong>Here is where you can configure the forecasts that are used in the simulations.</strong></td>
+      </tr>
+      <tr>
+        <td><strong>Display scenarios</strong></td>
+        <td><strong>Here is where you can configure the scenarios that are used in the simulations.</strong></td>
+      </tr>
+      <tr>
+      <tr>
+        <td><strong>Configure 2D animations</strong></td>
+        <td>
+          <strong>
+            This is where you configure the two dimensional animations that are used to illustrate your simulations.
+          </strong>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Configure 3D animations</strong></td>
+        <td>
+          <strong>
+            This is where you configure the three dimensional animations that are used to illustrate your simulations.
+          </strong>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="tab-pane fade show active"
+       id="display-forecasts"
+       role="tabpanel"
+       aria-labelledby="display-forecasts-tab"
+       *ngIf="this.myValueDisplayForecasts">
+    <br /><br />
+    <div class="x-large-text">Display forecasts tab content</div>.
+    <br /><br />
+  </div>
+
+  <div class="tab-pane fade show active"
+      id="display-scenarios"
+      role="tabpanel"
+      aria-labelledby="display-scenarios-tab"
+      *ngIf="this.myValueDisplayScenarios">
+  <br /><br />
+  <div class="x-large-text">Display scenarios tab content</div>.
+  <br /><br />
+  </div>
+
+  <div class="tab-pane fade show active"
+      id="configure-2D-animations"
+      role="tabpanel"
+      aria-labelledby="configure-2D-animations-tab"
+      *ngIf="this.myValueConfigureTwoDimensionalAnimations">
+  <br /><br />
+        <div class="x-large-text">Display 2D animations tab content</div>
+  <br /><br />
+  </div>
+
+    <div class="tab-pane fade show active"
+      id="configure-3D-animations"
+      role="tabpanel"
+      aria-labelledby="configure-2D-animations-tab"
+      *ngIf="this.myValueConfigureThreeDimensionalAnimations">
+  <br /><br />
+        <div class="x-large-text">Display 3D animations tab content</div>
+  <br /><br />
+  </div>
+
+  </div>

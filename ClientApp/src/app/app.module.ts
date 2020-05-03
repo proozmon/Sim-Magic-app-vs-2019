@@ -17,6 +17,7 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { WorkingOnSimulationsComponent } from './working-on-simulations/working-on-simulations.component';
 import { DisplayReportsComponent } from './display-reports/display-reports.component';
 import { DisplayAnalyticsComponent } from './display-analytics/display-analytics.component';
+import { DisplaySimulationsComponent } from './display-simulations/display-simulations.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { DisplayAnalyticsComponent } from './display-analytics/display-analytics
     WorkingOnSimulationsComponent,
     DisplayReportsComponent,
     DisplayAnalyticsComponent,
+    DisplaySimulationsComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -43,6 +45,7 @@ import { DisplayAnalyticsComponent } from './display-analytics/display-analytics
       { path: 'working-on-simulations', component: WorkingOnSimulationsComponent },
       { path: 'display-reports', component: DisplayReportsComponent },
       { path: 'display-analytics', component: DisplayAnalyticsComponent },
+      { path: 'display-simulations', component: DisplaySimulationsComponent },
     ])
   ],
   providers: [
