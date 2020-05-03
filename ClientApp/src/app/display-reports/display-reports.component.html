@@ -1,216 +1,216 @@
-<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueHowToDisplayResults">
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueHowToDisplayReports">
   <li class="nav-link active">
-    <a class="nav-link link-primary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#how-to-display-results" role="tab"
-       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display results</a>
+    <a class="nav-link link-primary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#how-to-display-reports" role="tab"
+       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display reports</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#display-operating-costs" role="tab"
+    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#display-operating-costs" role="tab"
        aria-controls="display-operating-costs" aria-selected="false" (click)="showActive(1)">Operating Costs</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-net-worth-tab" data-toggle="tab" href="/display-results#display-net-worth" role="tab"
+    <a class="nav-link link-secondary" id="display-net-worth-tab" data-toggle="tab" href="/display-reports#display-net-worth" role="tab"
        aria-controls="display-net-worth" aria-selected="false" (click)="showActive(2)">Net Worth</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-results#display-risk-analysis" role="tab"
+    <a class="nav-link link-secondary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-reports#display-risk-analysis" role="tab"
        aria-controls="display-risk-analysis" aria-selected="false" (click)="showActive(3)">Risk Analysis</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-results#display-descriptive-results" role="tab"
+    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-reports#display-descriptive-results" role="tab"
        aria-controls="system-parameters" aria-selected="false" (click)="showActive(4)">Descriptive Results</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-results#display-predictive-results" role="tab"
+    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-reports#display-predictive-results" role="tab"
        aria-controls="display-predictive-results" aria-selected="false" (click)="showActive(5)">Predictive Results</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-results#display-prescriptive-recommendations" role="tab"
+    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-reports#display-prescriptive-recommendations" role="tab"
        aria-controls="display-prescriptive-recommendations" aria-selected="false" (click)="showActive(6)">Prescriptive Recommendations</a>
   </li>
 </ul>
 
 <ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueDisplayOperatingCosts">
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#how-to-display-results" role="tab"
-       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display results</a>
+    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#how-to-display-reports" role="tab"
+       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display reports</a>
   </li>
   <li class="nav-link active">
-    <a class="nav-link link-primary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#display-operating-costs" role="tab"
+    <a class="nav-link link-primary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#display-operating-costs" role="tab"
        aria-controls="display-operating-costs" aria-selected="false" (click)="showActive(1)">Operating Costs</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-net-worth-tab" data-toggle="tab" href="/display-results#display-net-worth" role="tab"
+    <a class="nav-link link-secondary" id="display-net-worth-tab" data-toggle="tab" href="/display-reports#display-net-worth" role="tab"
        aria-controls="display-net-worth" aria-selected="false" (click)="showActive(2)">Net Worth</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-results#display-risk-analysis" role="tab"
+    <a class="nav-link link-secondary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-reports#display-risk-analysis" role="tab"
        aria-controls="display-risk-analysis" aria-selected="false" (click)="showActive(3)">Risk Analysis</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-results#display-descriptive-results" role="tab"
+    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-reports#display-descriptive-results" role="tab"
        aria-controls="system-parameters" aria-selected="false" (click)="showActive(4)">Descriptive Results</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-results#display-predictive-results" role="tab"
+    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-reports#display-predictive-results" role="tab"
        aria-controls="display-predictive-results" aria-selected="false" (click)="showActive(5)">Predictive Results</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-results#display-prescriptive-recommendations" role="tab"
+    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-reports#display-prescriptive-recommendations" role="tab"
        aria-controls="display-prescriptive-recommendations" aria-selected="false" (click)="showActive(6)">Prescriptive Recommendations</a>
   </li>
 </ul>
 
 <ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueDisplayNetWorth">
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#how-to-display-results" role="tab"
-       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display results</a>
+    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#how-to-display-reports" role="tab"
+       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display reports</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#display-operating-costs" role="tab"
+    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#display-operating-costs" role="tab"
        aria-controls="display-operating-costs" aria-selected="false" (click)="showActive(1)">Operating Costs</a>
   </li>
   <li class="nav-link active">
-    <a class="nav-link link-primary" id="display-net-worth-tab" data-toggle="tab" href="/display-results#display-net-worth" role="tab"
+    <a class="nav-link link-primary" id="display-net-worth-tab" data-toggle="tab" href="/display-reports#display-net-worth" role="tab"
        aria-controls="display-net-worth" aria-selected="false" (click)="showActive(2)">Net Worth</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-results#display-risk-analysis" role="tab"
+    <a class="nav-link link-secondary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-reports#display-risk-analysis" role="tab"
        aria-controls="display-risk-analysis" aria-selected="false" (click)="showActive(3)">Risk Analysis</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-results#display-descriptive-results" role="tab"
+    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-reports#display-descriptive-results" role="tab"
        aria-controls="system-parameters" aria-selected="false" (click)="showActive(4)">Descriptive Results</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-results#display-predictive-results" role="tab"
+    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-reports#display-predictive-results" role="tab"
        aria-controls="display-predictive-results" aria-selected="false" (click)="showActive(5)">Predictive Results</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-results#display-prescriptive-recommendations" role="tab"
+    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-reports#display-prescriptive-recommendations" role="tab"
        aria-controls="display-prescriptive-recommendations" aria-selected="false" (click)="showActive(6)">Prescriptive Recommendations</a>
   </li>
 </ul>
 
 <ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueDisplayRiskAnalysis">
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#how-to-display-results" role="tab"
-       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display results</a>
+    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#how-to-display-reports" role="tab"
+       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display reports</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#display-operating-costs" role="tab"
+    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#display-operating-costs" role="tab"
        aria-controls="display-operating-costs" aria-selected="false" (click)="showActive(1)">Operating Costs</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-net-worth-tab" data-toggle="tab" href="/display-results#display-net-worth" role="tab"
+    <a class="nav-link link-secondary" id="display-net-worth-tab" data-toggle="tab" href="/display-reports#display-net-worth" role="tab"
        aria-controls="display-net-worth" aria-selected="false" (click)="showActive(2)">Net Worth</a>
   </li>
   <li class="nav-link active">
-    <a class="nav-link link-primary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-results#display-risk-analysis" role="tab"
+    <a class="nav-link link-primary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-reports#display-risk-analysis" role="tab"
        aria-controls="display-risk-analysis" aria-selected="false" (click)="showActive(3)">Risk Analysis</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-results#display-descriptive-results" role="tab"
+    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-reports#display-descriptive-results" role="tab"
        aria-controls="system-parameters" aria-selected="false" (click)="showActive(4)">Descriptive Results</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-results#display-predictive-results" role="tab"
+    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-reports#display-predictive-results" role="tab"
        aria-controls="display-predictive-results" aria-selected="false" (click)="showActive(5)">Predictive Results</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-results#display-prescriptive-recommendations" role="tab"
+    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-reports#display-prescriptive-recommendations" role="tab"
        aria-controls="display-prescriptive-recommendations" aria-selected="false" (click)="showActive(6)">Prescriptive Recommendations</a>
   </li>
 </ul>
 
 <ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueDisplayDescriptiveResults">
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#how-to-display-results" role="tab"
-       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display results</a>
+    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#how-to-display-reports" role="tab"
+       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display reports</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#display-operating-costs" role="tab"
+    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#display-operating-costs" role="tab"
        aria-controls="display-operating-costs" aria-selected="false" (click)="showActive(1)">Operating Costs</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-net-worth-tab" data-toggle="tab" href="/display-results#display-net-worth" role="tab"
+    <a class="nav-link link-secondary" id="display-net-worth-tab" data-toggle="tab" href="/display-reports#display-net-worth" role="tab"
        aria-controls="display-net-worth" aria-selected="false" (click)="showActive(2)">Net Worth</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-results#display-risk-analysis" role="tab"
+    <a class="nav-link link-secondary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-reports#display-risk-analysis" role="tab"
        aria-controls="display-risk-analysis" aria-selected="false" (click)="showActive(3)">Risk Analysis</a>
   </li>
   <li class="nav-link active">
-    <a class="nav-link link-primary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-results#display-descriptive-results" role="tab"
+    <a class="nav-link link-primary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-reports#display-descriptive-results" role="tab"
        aria-controls="system-parameters" aria-selected="false" (click)="showActive(4)">Descriptive Results</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-results#display-predictive-results" role="tab"
+    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-reports#display-predictive-results" role="tab"
        aria-controls="display-predictive-results" aria-selected="false" (click)="showActive(5)">Predictive Results</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-results#display-prescriptive-recommendations" role="tab"
+    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-reports#display-prescriptive-recommendations" role="tab"
        aria-controls="display-prescriptive-recommendations" aria-selected="false" (click)="showActive(6)">Prescriptive Recommendations</a>
   </li>
 </ul>
 
 <ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueDisplayPredictiveResults">
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#how-to-display-results" role="tab"
-       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display results</a>
+    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#how-to-display-reports" role="tab"
+       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display reports</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#display-operating-costs" role="tab"
+    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#display-operating-costs" role="tab"
        aria-controls="display-operating-costs" aria-selected="false" (click)="showActive(1)">Operating Costs</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-net-worth-tab" data-toggle="tab" href="/display-results#display-net-worth" role="tab"
+    <a class="nav-link link-secondary" id="display-net-worth-tab" data-toggle="tab" href="/display-reports#display-net-worth" role="tab"
        aria-controls="display-net-worth" aria-selected="false" (click)="showActive(2)">Net Worth</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-results#display-risk-analysis" role="tab"
+    <a class="nav-link link-secondary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-reports#display-risk-analysis" role="tab"
        aria-controls="display-risk-analysis" aria-selected="false" (click)="showActive(3)">Risk Analysis</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-results#display-descriptive-results" role="tab"
+    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-reports#display-descriptive-results" role="tab"
        aria-controls="system-parameters" aria-selected="false" (click)="showActive(4)">Descriptive Results</a>
   </li>
   <li class="nav-link active">
-    <a class="nav-link link-primary" id="display-predictive-results-tab" data-toggle="tab" href="/display-results#display-predictive-results" role="tab"
+    <a class="nav-link link-primary" id="display-predictive-results-tab" data-toggle="tab" href="/display-reports#display-predictive-results" role="tab"
        aria-controls="display-predictive-results" aria-selected="false" (click)="showActive(5)">Predictive Results</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-results#display-prescriptive-recommendations" role="tab"
+    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-reports#display-prescriptive-recommendations" role="tab"
        aria-controls="display-prescriptive-recommendations" aria-selected="false" (click)="showActive(6)">Prescriptive Recommendations</a>
   </li>
 </ul>
 
 <ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueDisplayPrescriptiveRecommendations">
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#how-to-display-results" role="tab"
-       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display results</a>
+    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#how-to-display-reports" role="tab"
+       aria-controls="how-to-display-reults" aria-selected="false" (click)="showActive(0)">How to display reports</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-results#display-operating-costs" role="tab"
+    <a class="nav-link link-secondary" id="display-operating-costs-tab" data-toggle="tab" href="/display-reports#display-operating-costs" role="tab"
        aria-controls="display-operating-costs" aria-selected="false" (click)="showActive(1)">Operating Costs</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-net-worth-tab" data-toggle="tab" href="/display-results#display-net-worth" role="tab"
+    <a class="nav-link link-secondary" id="display-net-worth-tab" data-toggle="tab" href="/display-reports#display-net-worth" role="tab"
        aria-controls="display-net-worth" aria-selected="false" (click)="showActive(2)">Net Worth</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-results#display-risk-analysis" role="tab"
+    <a class="nav-link link-secondary" id="display-risk-analysis-tab" data-toggle="tab" href="/display-reports#display-risk-analysis" role="tab"
        aria-controls="display-risk-analysis" aria-selected="false" (click)="showActive(3)">Risk Analysis</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-results#display-descriptive-results" role="tab"
+    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-reports#display-descriptive-results" role="tab"
        aria-controls="system-parameters" aria-selected="false" (click)="showActive(4)">Descriptive Results</a>
   </li>
   <li class="nav-link">
-    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-results#display-predictive-results" role="tab"
+    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-reports#display-predictive-results" role="tab"
        aria-controls="display-predictive-results" aria-selected="false" (click)="showActive(5)">Predictive Results</a>
   </li>
   <li class="nav-linka active">
-    <a class="nav-link link-primary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-results#display-prescriptive-recommendations" role="tab"
+    <a class="nav-link link-primary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-reports#display-prescriptive-recommendations" role="tab"
        aria-controls="display-prescriptive-recommendations" aria-selected="false" (click)="showActive(6)">Prescriptive Recommendations</a>
   </li>
 </ul>
@@ -218,34 +218,35 @@
 <div class="tab-content" id="myTabContent">
 
   <div class="tab-pane fade show active"
-       id="login-or-register"
+       id="how-to-display-reports"
        role="tabpanel"
-       aria-labelledby="login-or-register-tab"
-       *ngIf="this.myValueHowToDisplayResults">
+       aria-labelledby="how-to-display-reports-tab"
+       *ngIf="this.myValueHowToDisplayReports">
 
     <br />
     <div class="text-center x-large-text">
-      <p><strong>How to Display Results</strong></p>
+      <p><strong>How to Display Reports</strong></p>
     </div>
     <hr />
 
     <div class="blue-background">
       <p>
         <strong>
-          This page is the starting point for choosing which results to display. Since the configufation details for the visualization are entered in
-          the graphical parameters tab of the 'Working on Simulations' page, the tabs of the 'How to display results' determine what aspect of the
+          This page is the starting point for choosing which reports to display. Since the configufation details for the visualization are entered in
+          the graphical parameters tab of the 'Working on Simulations' page, the tabs of the 'How to display reports' page determine what aspect of the
           visualization will be displayed.
         </strong>
       </p>
       <p>
         <strong>
-          For example, you can choose to view the operating costs, net worth, or risk analysis. You can also select the specific type of Analytics
-          that you want to display: descriptive, predictive or prescriptive, as described below.
+          For example, you can choose to view the operating costs, net worth, or risk analysis. For more detailed explanationsof the various types of
+          Visualizations available to you, please see the system's Help screens.
+
         </strong>
       </p>
       <p>
         <strong>
-          For more detailed explanationsof the various types of Visualizations and Analytics available to you, please see the system's Help screens.
+          To view the results of descriptive, predictive or prescriptive Analytics, select the 'Display Analytics' item from the menu at the top of the page.          .
         </strong>
       </p>
     </div>
@@ -262,9 +263,9 @@
         <th class="underline">Description</th>
       </tr>
       <tr>
-        <td><strong>How to display results</strong></td>
+        <td><strong>How to display reports</strong></td>
         <td>
-          <strong>This tab provides an entry point for displaying the results of your analytics and sinulations</strong>
+          <strong>This tab provides an entry point for displaying the reports of your analytics and sinulations</strong>
         </td>
       </tr>
       <tr>
@@ -336,7 +337,7 @@
        aria-labelledby="display-descriptive-results-tab"
        *ngIf="this.myValueDisplayDescriptiveResults">
     <br /><br />
-    <div class="x-large-text">Display descriptive results tab content</div>.
+    <div class="x-large-text">Display descriptive reports tab content</div>.
     <br /><br />
   </div>
 

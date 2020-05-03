@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-display-results',
-  templateUrl: './display-results.component.html'
+  selector: 'app-display-reports',
+  templateUrl: './display-reports.component.html'
 })
 
-export class DisplayResultsComponent implements OnInit {
+export class DisplayReportsComponent implements OnInit {
 
-  myValueHowToDisplayResults: boolean;
+  myValueHowToDisplayReports: boolean;
   myValueDisplayOperatingCosts: boolean;
   myValueDisplayNetWorth: boolean;
   myValueDisplayRiskAnalysis: boolean;
@@ -18,7 +18,7 @@ export class DisplayResultsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.myValueHowToDisplayResults = true;
+    this.myValueHowToDisplayReports = true;
     this.myValueDisplayOperatingCosts = false;
     this.myValueDisplayNetWorth = false;
     this.myValueDisplayRiskAnalysis = false;
@@ -31,7 +31,7 @@ export class DisplayResultsComponent implements OnInit {
 
     switch (tab) {
       case 0:
-        this.myValueHowToDisplayResults = true;
+        this.myValueHowToDisplayReports = true;
         this.myValueDisplayOperatingCosts = false;
         this.myValueDisplayNetWorth = false;
         this.myValueDisplayRiskAnalysis = false;
@@ -40,7 +40,7 @@ export class DisplayResultsComponent implements OnInit {
         this.myValueDisplayPrescriptiveRecommendations = false;
         break;
       case 1:
-        this.myValueHowToDisplayResults = false;
+        this.myValueHowToDisplayReports = false;
         this.myValueDisplayOperatingCosts = true;
         this.myValueDisplayNetWorth = false;
         this.myValueDisplayRiskAnalysis = false;
@@ -49,7 +49,7 @@ export class DisplayResultsComponent implements OnInit {
         this.myValueDisplayPrescriptiveRecommendations = false;
         break;
       case 2:
-        this.myValueHowToDisplayResults = false;
+        this.myValueHowToDisplayReports = false;
         this.myValueDisplayOperatingCosts = false;
         this.myValueDisplayNetWorth = true;
         this.myValueDisplayRiskAnalysis = false;
@@ -58,7 +58,7 @@ export class DisplayResultsComponent implements OnInit {
         this.myValueDisplayPrescriptiveRecommendations = false;
         break;
       case 3:
-        this.myValueHowToDisplayResults = false;
+        this.myValueHowToDisplayReports = false;
         this.myValueDisplayOperatingCosts = false;
         this.myValueDisplayNetWorth = false;
         this.myValueDisplayRiskAnalysis = true;
@@ -67,7 +67,7 @@ export class DisplayResultsComponent implements OnInit {
         this.myValueDisplayPrescriptiveRecommendations = false;
         break;
       case 4:
-        this.myValueHowToDisplayResults = false;
+        this.myValueHowToDisplayReports = false;
         this.myValueDisplayOperatingCosts = false;
         this.myValueDisplayNetWorth = false;
         this.myValueDisplayRiskAnalysis = false;
@@ -76,7 +76,7 @@ export class DisplayResultsComponent implements OnInit {
         this.myValueDisplayPrescriptiveRecommendations = false;
         break;
       case 5:
-        this.myValueHowToDisplayResults = false;
+        this.myValueHowToDisplayReports = false;
         this.myValueDisplayOperatingCosts = false;
         this.myValueDisplayNetWorth = false;
         this.myValueDisplayRiskAnalysis = false;
@@ -85,7 +85,7 @@ export class DisplayResultsComponent implements OnInit {
         this.myValueDisplayPrescriptiveRecommendations = false;
         break;
       case 6:
-        this.myValueHowToDisplayResults = false;
+        this.myValueHowToDisplayReports = false;
         this.myValueDisplayOperatingCosts = false;
         this.myValueDisplayNetWorth = false;
         this.myValueDisplayRiskAnalysis = false;
