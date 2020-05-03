@@ -9,7 +9,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { WorkingOnSimulationsComponent } from './working-on-simulations/working-on-simulations.component';
-import { DisplayResultsComponent } from './display-results/display-results.component';
+import { DisplayReportsComponent } from './display-reports/display-reports.component';
 
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
@@ -23,7 +23,7 @@ import { map, catchError } from 'rxjs/operators';
     HomeComponent,
     WelcomePageComponent,
     WorkingOnSimulationsComponent,
-    DisplayResultsComponent,
+    DisplayReportsComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -35,7 +35,7 @@ import { map, catchError } from 'rxjs/operators';
       { path: '', component: WelcomePageComponent, pathMatch: 'full' },
       { path: 'welcome-page', component: WelcomePageComponent },
       { path: 'working-on-simulations', component: WorkingOnSimulationsComponent },
-      { path: 'display-results', component: DisplayResultsComponent },
+      { path: 'display-reports', component: DisplayReportsComponent },
     ])
   ],
   providers: [],
