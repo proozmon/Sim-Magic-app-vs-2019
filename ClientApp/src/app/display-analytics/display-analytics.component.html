@@ -1,0 +1,182 @@
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueHowToDisplayAnalytics">
+  <li class="nav-link active">
+    <a class="nav-link link-primary" id="how-to-display-analytics-tab" data-toggle="tab" href="/display-analytics#how-to-display-analytics" role="tab"
+       aria-controls="how-to-display-analytics" aria-selected="false" (click)="showActive(1)">How to display Analytics</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-analytics#display-descriptive-results" role="tab"
+       aria-controls="system-parameters" aria-selected="false" (click)="showActive(2)">Descriptive Analytics Results</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-analytics#display-predictive-results" role="tab"
+       aria-controls="display-predictive-results" aria-selected="false" (click)="showActive(3)">Predictive Analytics Results</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-analytics#display-prescriptive-recommendations" role="tab"
+       aria-controls="display-prescriptive-recommendations" aria-selected="false" (click)="showActive(4)">Prescriptive Recommendations</a>
+  </li>
+</ul>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueDisplayDescriptiveAnalyticsResults">
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="how-to-display-analytics-tab" data-toggle="tab" href="/display-analytics#how-to-display-analytics" role="tab"
+       aria-controls="how-to-display-analytics" aria-selected="false" (click)="showActive(1)">How to display Analytics</a>
+  </li>
+  <li class="nav-link active">
+    <a class="nav-link link-primary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-analytics#display-descriptive-results" role="tab"
+       aria-controls="system-parameters" aria-selected="false" (click)="showActive(2)">Descriptive Analytics Results</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-predictive-results-tab" data-toggle="tab" href="/display-analytics#display-predictive-results" role="tab"
+       aria-controls="display-predictive-results" aria-selected="false" (click)="showActive(3)">Predictive Analytics Results</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-analytics#display-prescriptive-recommendations" role="tab"
+       aria-controls="display-prescriptive-recommendations" aria-selected="false" (click)="showActive(4)">Prescriptive Recommendations</a>
+  </li>
+</ul>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueDisplayPredictiveAnalyticsResults">
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="how-to-display-analytics-tab" data-toggle="tab" href="/display-analytics#how-to-display-analytics" role="tab"
+       aria-controls="how-to-display-analytics" aria-selected="false" (click)="showActive(1)">How to display Analytics</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-analytics#display-descriptive-results" role="tab"
+       aria-controls="system-parameters" aria-selected="false" (click)="showActive(2)">Descriptive Analytics Results</a>
+  </li>
+  <li class="nav-link active">
+    <a class="nav-link link-primary" id="display-predictive-results-tab" data-toggle="tab" href="/display-analytics#display-predictive-results" role="tab"
+       aria-controls="display-predictive-results" aria-selected="false" (click)="showActive(3)">Predictive Analytics Results</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-analytics#display-prescriptive-recommendations" role="tab"
+       aria-controls="display-prescriptive-recommendations" aria-selected="false" (click)="showActive(4)">Prescriptive Recommendations</a>
+  </li>
+</ul>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="this.myValueDisplayPrescriptiveAnalyticsRecommendations">
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="how-to-display-analytics-tab" data-toggle="tab" href="/display-analytics#how-to-display-analytics" role="tab"
+       aria-controls="how-to-display-analytics" aria-selected="false" (click)="showActive(1)">How to display Analytics</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-secondary" id="display-descriptive-results-tab" data-toggle="tab" href="/display-analytics#display-descriptive-results" role="tab"
+       aria-controls="system-parameters" aria-selected="false" (click)="showActive(2)">Descriptive Results</a>
+  </li>
+  <li class="nav-link">
+    <a class="nav-link link-" id="display-predictive-results-tab" data-toggle="tab" href="/display-analytics#display-predictive-results" role="tab"
+       aria-controls="display-predictive-results" aria-selected="false" (click)="showActive(3)">Predictive Results</a>
+  </li>
+  <li class="nav-link active">
+    <a class="nav-link link-primary" id="display-prescriptive-recommendations-tab" data-toggle="tab" href="/display-analytics#display-prescriptive-recommendations" role="tab"
+       aria-controls="display-prescriptive-recommendations" aria-selected="false" (click)="showActive(4)">Prescriptive Recommendations</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+
+  <div class="tab-pane fade show active"
+       id="how-to-display-analytics"
+       role="tabpanel"
+       aria-labelledby="how-to-display-analytics-tab"
+       *ngIf="this.myValueHowToDisplayAnalytics">
+
+    <br />
+    <div class="text-center x-large-text">
+      <p><strong>How to Display Analytics</strong></p>
+    </div>
+    <hr />
+
+    <div class="blue-background">
+      <p>
+        <strong>
+          This page is the starting point for choosing which type of aanalytics to display. While the results of the system's analysis can be visualized as
+          via the 'Display Reports' page, the various tabs of the 'Display Analytics' page are intended specifically to show the descriptive, predictive
+          and prescriprtiv aspects fo the Analytcis process.
+        </strong>
+      </p>
+      <p>
+        <strong>
+          The Descriptive Analyics shows the current state of your system, the Predictive Analytics tab shows where your system is likely to be heading and
+          the Prescriptive Analytics tab provides recomemdnations for improving th preidted outcome. For more detailed explanationsof the various types of
+          Analytics available to you, please see the system's Help screens.
+        </strong>
+      </p>
+      <p>
+        <strong>
+          To view the results of various types of simulations (e.g. foreacts, scenarios, etc), select the 'Display Simulations' item from the menu at the
+          top of the page.          .
+        </strong>
+      </p>
+    </div>
+    <hr />
+
+    <div class="text-center larger-text">
+      <p><strong>Descriptin of Tab Selections for this Page</strong></p>
+    </div>
+    <br />
+
+    <table class="table bold-borders">
+      <tr>
+        <th class="underline">Tab</th>
+        <th class="underline">Description</th>
+      </tr>
+      <tr>
+        <td><strong>How to display Analytics</strong></td>
+        <td>
+          <strong>This tab provides an entry point for displaying the reports of your analytics and sinulations</strong>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Descriptive Analytics results</strong></td>
+        <td><strong>Here is wher you can view the current state of the system that you're analyzing.</strong></td>
+      </tr>
+      <tr>
+        <td><strong>Predictive Aanalytics results</strong></td>
+        <td>
+          <strong>This tab shows you what your system will probably look like in the future, based on the analysis.</strong>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Prescriptive Analytics recommendations </strong></td>
+        <td>
+          <strong>
+            This is where the program advises you on how you can mitigate risks and improve the expected outcome for your system.
+          </strong>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="tab-pane fade show active"
+       id="display-descriptive-analytics"
+       role="tabpanel"
+       aria-labelledby="display-descriptive-analytics-tab"
+       *ngIf="this.myValueDisplayDescriptiveAnalyticsResults">
+    <br /><br />
+    <div class="x-large-text">Display descriptive Analytics tab content</div>.
+    <br /><br />
+  </div>
+
+  <div class="tab-pane fade show active"
+       id="display-predictive-results"
+       role="tabpanel"
+       aria-labelledby="display-predictive-results-tab"
+       *ngIf="this.myValueDisplayPredictiveAnalyticsResults">
+    <br /><br />
+    <div class="x-large-text">Display predictive Analytics tab content</div>.
+    <br /><br />
+  </div>
+
+  <div class="tab-pane fade show active"
+       id="display-prescriptive-recommendations"
+       role="tabpanel"
+       aria-labelledby="display-prescriptive-recommendations-tab"
+       *ngIf="this.myValueDisplayPrescriptiveAnalyticsRecommendations">
+    <br /><br />
+    <div class="x-large-text">Display prescriptive Analytics tab content</div>
+    <br /><br />
+  </div>
+
+</div>
