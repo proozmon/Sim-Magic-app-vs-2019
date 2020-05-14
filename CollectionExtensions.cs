@@ -21,6 +21,14 @@ namespace Sim_Magic_app
         }
     }
 
+    // *****************************************************************************************************************
+    // Notes:
+    // 1. this code comes from th following Git hub link:
+    //    https://github.com/aspnet/AspNetWebStack/blob/master/src/System.Web.Http/HttpRouteCollectionExtensions.cs
+    // 2. It replaces the description of the extensions that came from NuGet, but which did not actually include the code
+    //
+    // *****************************************************************************************************************
+
     /// <summary>
     /// Extension methods for <see cref="HttpRouteCollection"/>
     /// </summary>
